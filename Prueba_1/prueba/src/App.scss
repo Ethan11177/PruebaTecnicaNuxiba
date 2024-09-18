@@ -1,0 +1,79 @@
+/* App.scss */
+
+/* Configura la altura de la aplicación para que todo el contenido esté dentro de la pantalla */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: linear-gradient(
+    to bottom,
+    black 10%,
+    white
+  ); /* Degradado de negro a blanco */
+}
+
+/* Estilos para el header fijo */
+.app-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed; /* Hace que el header sea fijo */
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que el header ocupe todo el ancho */
+  z-index: 1000; /* Asegura que el header quede por encima de otros elementos */
+  border-bottom-left-radius: 5%; 
+  border-bottom-right-radius: 5%;
+  padding: 15px; /* Añade un poco de padding al header */
+
+  @media (max-width: 768px) {
+    padding: 10px; /* Ajusta el padding para pantallas pequeñas */
+    font-size: 1.2rem; /* Reduce el tamaño del texto en móviles */
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
+
+/* El contenido principal ocupa todo el espacio disponible */
+.app-main {
+  flex-grow: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  margin-bottom: 2%; 
+
+  @media (max-width: 768px) {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 8%; 
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 15%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+  }
+}
+
+/* Estilos para el footer */
+.app-footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 5px;
+    font-size: 0.8rem;
+  }
+}
