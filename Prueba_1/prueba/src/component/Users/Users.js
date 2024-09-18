@@ -1,3 +1,8 @@
+// Nombre: Users Component
+// Autor: Vaquera Aguilera Ethan Emiliano
+// Lugar de edición: Ciudad de Mexico
+// Fecha: 18 de septiembre de 2024
+// Versión: 1.0.0
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers, fetchPosts, fetchTodos } from "../../actions/userActions";

@@ -1,3 +1,9 @@
+// Nombre: Todos Components
+// Autor: Vaquera Aguilera Ethan Emiliano
+// Lugar de edición: Ciudad de Mexico
+// Fecha: 18 de septiembre de 2024
+// Versión: 1.0.0
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 import AddTodo from './AddTodo'; // Asegúrate de que AddTodo está correctamente importado.
